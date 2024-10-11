@@ -1,0 +1,66 @@
+.sub-products__title {
+  margin: 0;
+
+  font-family: $secondary-font;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.sub-products__list {
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.sub-products__item-title {
+  margin: 0;
+
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.sub-products__gift {
+  height: 290px;
+  background-color: $basic-green-opacity;
+  background-image: linear-gradient($basic-green-opacity, $basic-green-opacity), url("../../images/catalog-background-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient($basic-green-opacity, $basic-green-opacity), url("../../images/catalog-background-mobile@2x.png");
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 200px;
+    background-color: $basic-green-opacity;
+    background-image: linear-gradient($basic-green-opacity, $basic-green-opacity), url("../../images/catalog-background-tablet@1x.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient($basic-green-opacity, $basic-green-opacity), url("../../images/catalog-background-tablet@2x.png");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 288px;
+    background-color: $basic-green-opacity;
+    background-image: linear-gradient($basic-green-opacity, $basic-green-opacity), url("../../images/catalog-background-desktop@1x.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient($basic-green-opacity, $basic-green-opacity), url("../../images/catalog-background-desktop@2x.png");
+    }
+  }
+
+  p {
+    margin: 0;
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    color: $secondary-color;
+  }
+}

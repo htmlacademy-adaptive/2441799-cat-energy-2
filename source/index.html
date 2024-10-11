@@ -15,13 +15,11 @@
 
 <body class="page__body">
   <header class="main-header">
+    <a class="main-header__logo" href="index.html">
+      <img class="logo__pic" src="#" width="33" height="38" alt="Логотип «Кэт энерджи»">
+      <img class="logo__text" src="#" width="101" height="18" alt="CAT ENERGY">
+    </a>
     <nav class="main-nav">
-      <a class="main-nav__logo-pic" href="index.html">
-        <img src="#" width="33" height="38" alt="Логотип «Кэт энерджи»">
-      </a>
-      <a class="main-nav__logo-text logo-text" href="#">
-        <img src="#" width="101" height="18" alt="CAT ENERGY">
-      </a>
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
@@ -65,12 +63,16 @@
           <li class="programs__item programs__item--slim">
             <h3 class="programs__title">похудение</h3>
             <p class="programs__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            <a class="programs__link" href="#">каталог slim</a>
+            <a class="programs__link" href="#">
+              <span>каталог slim</span>
+            </a>
           </li>
           <li class="programs__item programs__item--pro">
             <h3 class="programs__title">набор массы</h3>
             <p class="programs__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-            <a class="programs__link" href="#">каталог pro</a>
+            <a class="programs__link" href="#">
+              <span>каталог pro</span>
+            </a>
           </li>
         </ul>
       </div>
@@ -134,7 +136,7 @@
   <footer class="main-footer">
     <div class="main-footer__wrapper">
 
-      <div class="main-footer__address">
+      <div class="main-footer__address add">
         <b>Приглашаем к сотрудничеству дилеров!</b>
         <p>ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
@@ -148,7 +150,7 @@
       </div>
 
       <div class="main-footer__contacts contacts">
-        <img class="contacts__logo-text logo-text" src="#" alt="CAT ENERGY" width="128" height="24">
+        <img class="contacts__logo-text logo__text" src="#" alt="CAT ENERGY" width="128" height="24">
         <ul class="contacts__social-list">
           <li class="contacts__social-item">
             <a class="contacts__social-link social-link--vkontakte" href="https://vk.com/htmlacademy">Мы в ВКонтакте</a>
@@ -161,7 +163,7 @@
           </li>
         </ul>
         <a class="contacts__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
-          <b>HTML Academy</b>
+          <p>HTML Academy</p>
           <img src="#" alt="Логотип HTML Academy" width="27" height="34">
         </a>
       </div>

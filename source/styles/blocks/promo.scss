@@ -1,0 +1,40 @@
+.promo__header {
+  font-family: $secondary-font;
+  text-align: center;
+
+  color: $secondary-color;
+  background-color: $basic-green-opacity;
+  height: 302px;
+  background-image: linear-gradient($basic-green-opacity, $basic-green-opacity), url("../../images/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient($basic-green-opacity, $basic-green-opacity), url("../../images/index-background-mobile@2x.jpg");
+  }
+
+  @media (min-width: $tablet-width) {
+    color: $primary-color;
+    background-color: $primary-bg-color;
+    background-image: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    color: $primary-color;
+    background-color: $primary-bg-color;
+  }
+}
+
+.promo__intro {
+  margin: 0;
+
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.promo__slogan {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 14px;
+}

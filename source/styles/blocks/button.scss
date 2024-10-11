@@ -1,0 +1,8 @@
+.button {
+  @include button;
+}
+
+.button--light {
+  color: $special_dark-grey;
+  background-color: $basic-grey;
+}
