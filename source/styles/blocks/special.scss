@@ -14,3 +14,71 @@
   list-style-type: none;
   color: $special_dark-grey;
 }
+
+.special__item {
+  position: relative;
+
+  &:not(:last-child) {
+    margin-bottom: 24px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+
+    background-color: $basic-green;
+  }
+
+  &:nth-child(1)::after {
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: 15px;
+    width: 30px;
+    height: 32px;
+    background-image: url("../../icons/stack.svg#icon-leaf");
+    background-repeat: no-repeat;
+  }
+
+  &:nth-child(2)::after {
+    content: "";
+    position: absolute;
+    top: 16px;
+    left: 17.5px;
+    width: 25.98px;
+    height: 28.51px;
+    background-image: url("../../icons/stack.svg#icon-powder");
+    background-repeat: no-repeat;
+  }
+
+  &:nth-child(3)::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 17.5px;
+    width: 25px;
+    height: 30px;
+    background-image: url("../../icons/stack.svg#icon-eat");
+    background-repeat: no-repeat;
+  }
+
+  &:nth-child(4)::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 17.56px;
+    width: 26.09px;
+    height: 31px;
+    background-image: url("../../icons/stack.svg#icon-clock");
+    background-repeat: no-repeat;
+  }
+}
+
+.special__item p {
+  margin: 0;
+  margin-left: 80px;
+}

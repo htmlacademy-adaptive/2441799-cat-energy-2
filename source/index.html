@@ -15,12 +15,19 @@
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo" href="index.html">
-      <img class="logo__pic" src="#" width="33" height="38" alt="Логотип «Кэт энерджи»">
-      <img class="logo__text" src="#" width="101" height="18" alt="CAT ENERGY">
-    </a>
+    <div class="main-header__container">
+      <a class="main-header__logo" href="index.html">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="images/logo-pic-desktop.svg" width="202" height="59" type="image/svg+xml">
+          <source media="(min-width: 768px)" srcset="images/logo-pic-tablet.svg" width="174" height="50" type="image/svg+xml">
+          <img class="main-header__logo-pic" src="images/logo-pic-mobile.svg" width="33" height="38" alt="Логотип «Кэт энерджи»">
+        </picture>
+        <img class="main-header__logo-text" src="images/logo-text.svg" width="101" height="18" alt="CAT ENERGY">
+      </a>
+      <button class="main-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <button class="main-header__toggle--close" type="button"><span class="visually-hidden">Скрыть меню</span></button>
+    </div>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
@@ -150,21 +157,30 @@
       </div>
 
       <div class="main-footer__contacts contacts">
-        <img class="contacts__logo-text logo__text" src="#" alt="CAT ENERGY" width="128" height="24">
+        <a class="contacts__logo-text" href="index.html">
+          <span class="visually-hidden">Главная страница CAT ENERDGY</span>
+        </a>
         <ul class="contacts__social-list">
           <li class="contacts__social-item">
-            <a class="contacts__social-link social-link--vkontakte" href="https://vk.com/htmlacademy">Мы в ВКонтакте</a>
+            <a class="contacts__social-link contacts__social-link--vkontakte" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">Мы в ВКонтакте</span>
+            </a>
           </li>
           <li class="contacts__social-item">
-            <a class="contacts__social-link social-link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в YouTube</a>
+            <a class="contacts__social-link contacts__social-link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">Мы в YouTube</span>
+            </a>
           </li>
           <li class="contacts__social-item">
-            <a class="contacts__social-link social-link--telegram" href="https://t.me/htmlacademy">Мы в Telegram</a>
+            <a class="contacts__social-link contacts__social-link--telegram" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Мы в Telegram</span>
+            </a>
           </li>
         </ul>
-        <a class="contacts__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
-          <p>HTML Academy</p>
-          <img src="#" alt="Логотип HTML Academy" width="27" height="34">
+        <a class="contacts__copyright" href="https://htmlacademy.ru/intensive/adaptive">
+          <p class="contacts__copyright-text">HTML Academy</p>
+          <div class="contacts__copyright-pic">
+          </div>
         </a>
       </div>
 

@@ -5,3 +5,61 @@
   text-align: center;
   text-transform: uppercase;
 }
+
+.main-header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.main-header__logo {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.main-header__logo-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.main-header__toggle {
+  width: 24px;
+  height: 24px;
+  padding: 4px 0;
+
+  border: none;
+  mask-image: url("../../icons/stack.svg#navicon");
+  background-color: #000000;
+}
+
+.main-header__toggle--close {
+  display: none;
+  width: 18px;
+  height: 18px;
+  padding: 0;
+
+  border: none;
+  mask-image: url("../../icons/stack.svg#cross");
+  background-color: #000000;
+}
+

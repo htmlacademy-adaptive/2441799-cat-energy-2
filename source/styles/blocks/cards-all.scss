@@ -1,6 +1,23 @@
-.cards-all {
-  h3 {
-    text-align: center;
+.cards-all__title {
+  position: relative;
+  text-align: center;
+
+  padding-top: 53px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+
+    display: block;
+    width: 30px;
+    height: 30px;
+
+    background-image: url("../../icons/stack.svg#plus");
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
   }
 }
 
