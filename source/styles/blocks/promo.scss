@@ -21,22 +21,6 @@
     @media (min-width: $tablet-width) {
       visibility: hidden;
     }
-
-    /* @media (min-width: $desktop-width) {
-      visibility: visible;
-      position: absolute;
-      top: -116px;
-      right: 0;
-      z-index: -1;
-
-      width: 50%;
-      height: 694px;
-      color: $secondary-color;
-      background-color: $basic-green-opacity;
-      background-image: linear-gradient($basic-green-opacity, $basic-green-opacity), url("../../images/index-background-desktop@1x.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-    } */
   }
 }
 
@@ -46,13 +30,20 @@
   align-items: center;
   padding: 27px 20px 0;
 
+  @media (max-width: 767px) {
+    margin-top: 65px;
+  }
+
+
   @media (min-width: $tablet-width) {
+    align-items: stretch;
+
     padding: 65px 30px 0;
   }
 
   @media (min-width: $desktop-width) {
     display: block;
-    padding: 29px 110px 0;
+    padding: 29px 190px 0;
   }
 }
 
@@ -64,7 +55,8 @@
 
   @media (min-width: $tablet-width) {
     align-self: flex-start;
-    padding-left: 90px;
+    margin-left: 90px;
+    z-index: 1;
 
     font-size: 60px;
     line-height: 60px;
@@ -73,8 +65,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 81px;
-    padding-left: 80px;
+    margin: 80px 0 40px;
     color: $primary-color;
   }
 }
@@ -87,6 +78,8 @@
   line-height: 36px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+
     font-size: 60px;
     line-height: 60px;
   }
@@ -98,31 +91,63 @@
 
   font-size: 14px;
   line-height: 14px;
+  text-transform: uppercase;
+
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 50px;
+
     font-size: 20px;
     line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 52px;
   }
 }
 
 .promo__img {
   display: block;
   margin: 0 auto;
+  margin-bottom: 3px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -87px;
+  }
+
 
   @media (min-width: $desktop-width) {
     position: relative;
     margin: 0;
-    bottom: 257px;
-    left: 448px;
+    margin-top: -363px;
+    left: 34.6%;
   }
 }
 
 .promo__button {
+  order: 4;
   width: 280px;
   height: 40px;
-  padding-top: 10px;
+  padding: 10px;
 
   @media (min-width: $tablet-width) {
-    top: 50px;
+    order: 0;
+    z-index: 1;
+    display: block;
+
+    margin-left: 90px;
+    padding: 14px;
+    width: 244px;
+    height: 54px;
+
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding: 14px;
+    width: 244px;
+    height: 54px;
   }
 }

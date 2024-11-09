@@ -21,6 +21,20 @@ body {
   background-color: $primary-bg-color;
 }
 
+.page__wrapper {
+  margin: 0 auto;
+  min-height: 100%;
+  width: 320px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+  }
+}
+
 a {
   text-decoration: none;
   color: $primary-color;

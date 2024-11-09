@@ -1,8 +1,8 @@
 .cards-all {
-  grid-template: "header" auto "text" auto "button" 40px / 100%;
+  grid-template: "header" auto "text" auto "button" auto / 100%;
   justify-items: stretch;
 
-  padding: 78px 20px 40px;
+  padding: 78px 20px 24px;
 
   background-image: url("../../icons/stack.svg#plus");
   background-size: 30px 30px;
@@ -13,10 +13,11 @@
     padding: 160px 37px 40px;
     background-color: transparent;
     background-position: 50% 50px;
+    background-size: 60px 60px;
     border: 1px solid $basic-grey;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     padding: 150px 38px 40px;
   }
 }
@@ -26,11 +27,12 @@
   text-align: center;
 
   padding: 0;
-  margin-bottom: 23px;
+  margin-bottom: 8px;
   width: 100%;
 
   @media (min-width: $tablet-width) {
     padding: 0 56px;
+    margin-bottom: 23px;
   }
 
   @media (min-width: $desktop-width) {

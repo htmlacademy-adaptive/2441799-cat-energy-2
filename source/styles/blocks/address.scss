@@ -2,10 +2,10 @@
   display: flex;
   justify-content: space-between;
 
-  padding: 20px 26px;
+  padding: 26px 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 60px 70px;
+    padding: 61px 70px;
   }
 
   @media (min-width: $desktop-width) {
@@ -14,7 +14,7 @@
     left: 110px;
     z-index: 1;
 
-    margin-bottom: -201px;
+    margin-bottom: -200px;
     padding: 60px 80px;
 
     width: 565px;
@@ -22,7 +22,6 @@
     background-color: $primary-bg-color;
   }
 }
-
 
 .address__intro {
   font-family: $secondary-font;
