@@ -89,7 +89,11 @@
       height: 2px;
       background-color: $basic-green;
     }
+  }
+}
 
+.main-nav__list--light {
+  .main-nav__item--active {
     @media (min-width: $desktop-width) {
       &::after {
         background-color: $primary-bg-color;
