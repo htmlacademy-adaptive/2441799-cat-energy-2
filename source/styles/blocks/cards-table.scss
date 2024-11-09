@@ -1,0 +1,23 @@
+.cards-table {
+  display: flex;
+  flex-direction: column;
+}
+
+.cards-table__row {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    padding: 7px 0 4px;
+    border-bottom: 1px solid $special-grey;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0 6.6px;
+    margin: 0 0 4px;
+  }
+}
+
+.cards-table__description {
+  margin: 0;
+}

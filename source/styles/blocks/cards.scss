@@ -1,0 +1,190 @@
+.cards {
+  padding-top: 66px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 74px;
+  }
+}
+
+.cards__header {
+  margin: 0;
+  margin-bottom: 41px;
+  padding-left: 20px;
+
+  font-family: $secondary-font;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+
+  @media (max-width: 767px) {
+    padding-top: 27px;
+    border-top: 1px solid $special-grey-2;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 30px;
+    margin-bottom: 165px;
+
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 110px;
+  }
+}
+
+.cards__list {
+  display: grid;
+
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 324px 324px;
+    gap: 141px 60px;
+
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-items: center;
+    grid-template-columns: 245px 245px 245px 245px;
+    gap: 144px 80px;
+
+    padding: 0 110px;
+  }
+}
+
+.cards__item {
+  display: grid;
+  justify-items: stretch;
+  grid-template: "pic header" auto "pic tablet" auto "button button" auto / 50% 50%;
+  padding: 20px 20px 25px;
+
+  border-top: 1px solid $special-grey-2;
+
+  &:last-child {
+    border-bottom: 1px solid $special-grey-2;
+  }
+
+  @media (min-width: $tablet-width) {
+    justify-items: center;
+
+    grid-template: "pic" 161px "header" auto "tablet" auto "button" 40px;
+    padding: 0 37px 40px;
+
+    background-color: $basic-grey;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template: "pic" 151px "header" auto "tablet" auto "button" 40px;
+
+    padding: 0 38px 40px;
+  }
+}
+
+.cards__title {
+  grid-area: header;
+
+  margin: 0;
+  margin-bottom: 14px;
+
+  width: 76px;
+
+  font-family: $secondary-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  color: #222222;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 13px;
+    padding: 0 47px;
+    width: 100%;
+
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 23.4px;
+    padding: 0 21px;
+    width: 100%;
+  }
+}
+
+.cards__pic {
+  grid-area: pic;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 140px;
+  height: 107px;
+  object-fit: none;
+
+  @media (min-width: $tablet-width) {
+    width: 200px;
+    height: 210px;
+  }
+}
+
+.cards__pic--small {
+  @media (min-width: $tablet-width) {
+    margin-top: -70px;
+    padding: 0 19.5px;
+  }
+}
+
+.cards__pic--big {
+  @media (min-width: $tablet-width) {
+    margin-top: -70px;
+  }
+}
+
+.cards__table {
+  grid-area: tablet;
+
+  margin: 0;
+  margin-bottom: 21px;
+
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 32px;
+    width: 250px;
+
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 169px;
+  }
+}
+
+.cards__button {
+  grid-area: button;
+  height: 40px;
+
+  @media (min-width: $tablet-width) {
+    width: 250px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 169px;
+  }
+}

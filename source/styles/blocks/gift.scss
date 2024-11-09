@@ -1,0 +1,87 @@
+.gift {
+  position: relative;
+
+  padding: 58.91px 58px 43.02px;
+  background-color: $basic-green-opacity;
+  background-image: linear-gradient($basic-green-opacity, $basic-green-opacity), url("../../images/catalog-background-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient($basic-green-opacity, $basic-green-opacity), url("../../images/catalog-background-mobile@2x.png");
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 71px 125px 69px 77px;
+
+    background-color: $basic-green-opacity;
+    background-image: linear-gradient($basic-green-opacity, $basic-green-opacity), url("../../images/catalog-background-tablet@1x.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient($basic-green-opacity, $basic-green-opacity), url("../../images/catalog-background-tablet@2x.png");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 56px 42px 43px;
+    height: 288px;
+    background-color: $basic-green-opacity;
+    background-image: linear-gradient($basic-green-opacity, $basic-green-opacity), url("../../images/catalog-background-desktop@1x.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient($basic-green-opacity, $basic-green-opacity), url("../../images/catalog-background-desktop@2x.png");
+    }
+  }
+}
+
+.gift::before {
+  content: "";
+  position: absolute;
+  top: 56px;
+  left: 50%;
+  transform: translate(-50%);
+
+  display: block;
+  width: 78px;
+  height: 80.03px;
+
+  background-image: url("../../icons/stack.svg#icon-gift");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    top: 50%;
+    left: 77px;
+    transform: translateY(-50%);
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 56px;
+    left: 50%;
+    transform: translate(-50%);
+  }
+}
+
+.gift__description {
+  margin: 0;
+  margin-top: 126px;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  color: $secondary-color;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-left: 344px;
+
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-top: 129px;
+    text-align: center;
+  }
+}

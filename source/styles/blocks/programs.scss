@@ -1,0 +1,204 @@
+.programs__wrapper {
+  padding: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 134px;
+    padding: 0 110px 71px;
+  }
+}
+
+.programs__list {
+  display: grid;
+  gap: 20px;
+
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    gap: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
+}
+
+.programs__item {
+  padding: 30px 33px 18px 20px;
+  background-color: $basic-grey;
+
+  @media (min-width: $tablet-width) {
+    padding: 77px 316px 57px 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 73px 61px 59px 52px;
+  }
+}
+
+.programs__item--slim {
+  background-image: url("../../icons/stack.svg#icon-cat-slim");
+  background-repeat: no-repeat;
+  background-position: top 21px left 20px;
+  background-size: 50px 53px;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../../icons/stack.svg#icon-cat-slim");
+    background-repeat: no-repeat;
+    background-position: top 81px right 63px;
+    background-size: 200px 211px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../../icons/stack.svg#icon-cat-slim");
+    background-repeat: no-repeat;
+    background-position: top 39px left 53px;
+    background-size: 100px 106px;
+  }
+}
+
+.programs__item--pro {
+  background-image: url("../../icons/stack.svg#icon-cat-pro");
+  background-repeat: no-repeat;
+  background-position: top 24px left 13px;
+  background-size: 67px 50px;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../../icons/stack.svg#icon-cat-pro");
+    background-repeat: no-repeat;
+    background-position: top 91px right 29px;
+    background-size: 268px 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../../icons/stack.svg#icon-cat-pro");
+    background-repeat: no-repeat;
+    background-position: top 45px left 35px;
+    background-size: 134px 100px;
+  }
+}
+
+.programs__title {
+  margin: 0;
+  margin-left: 70px;
+  margin-bottom: 29px;
+  font-family: $secondary-font;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 37px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-bottom: 24px;
+
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 162px;
+    margin-bottom: 73px;
+  }
+}
+
+.programs__description {
+  margin: 0;
+  margin-bottom: 20px;
+  padding-bottom: 23px;
+  color: $special_dark-grey;
+
+  @media (max-width: 767px) {
+    position: relative;
+    padding-bottom: 23px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 1px;
+      min-width: 240px;
+
+      background-color: #d9d9d9;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 52px;
+    padding: 0;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 27px;
+  }
+}
+
+.programs__link {
+  width: 139px;
+
+  @media (min-width: $tablet-width) {
+    width: 165px;
+  }
+
+  &:hover {
+    color: $primary-color;
+  }
+
+  &:focus {
+    color: $primary-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:hover .programs__link-text::after {
+    background-position: 0;
+    transition: background-position 0.5s;
+  }
+}
+
+.programs__link-text {
+  position: relative;
+  padding-right: 47px;
+
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 57px;
+
+    font-size: 20px;
+    line-height: 29.64px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+
+    width: 32px;
+    height: 12px;
+
+    background-image: url("../../icons/stack.svg#icon-arrow");
+    background-repeat: no-repeat;
+    background-size: 32px 12px;
+    background-position: -8px;
+  }
+}
+
