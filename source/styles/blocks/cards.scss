@@ -179,6 +179,9 @@
 .cards__button {
   grid-area: button;
   height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
     width: 250px;
