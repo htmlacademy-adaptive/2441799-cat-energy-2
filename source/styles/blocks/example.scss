@@ -1,4 +1,4 @@
-.example {
+.example__main-wrapper {
   background: $secondary-bg-color;
 
   @media (min-width: $tablet-width) {
@@ -9,6 +9,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    position: relative;
+
     background: $secondary-bg-color;
   }
 }
@@ -25,8 +27,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    position: relative;
-
     display: block;
 
     padding: 0 110px 68px;
@@ -52,7 +52,9 @@
 
 .example__title {
   margin: 0;
-  padding-bottom: 40px;
+  margin-left: 20px;
+  padding-bottom: 14px;
+  padding-top: 25px;
 
   font-family: $secondary-font;
   font-size: 36px;
@@ -62,6 +64,7 @@
   @media (min-width: $tablet-width) {
     align-self: flex-start;
     margin-top: 45px;
+    margin-left: 30px;
     padding: 0 0 60px;
 
     font-size: 60px;
@@ -70,7 +73,7 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
-    padding: 0 0 76px;
+    padding: 0 0 76px 110px;
     background: $primary-bg-color;
   }
 }
