@@ -1,4 +1,4 @@
-.slider__list {
+.slider {
   position: relative;
   margin: 0;
   padding: 0;
@@ -14,7 +14,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    bottom: 10px;
+    position: absolute;
+
+    top: 0;
+    right: 110px;
   }
 }
 
@@ -91,6 +94,19 @@
       fill: $basic-green;
     }
   }
+
+  &:focus {
+    background-color: $basic-green;
+
+    rect {
+      stroke: $basic-green;
+    }
+
+    path {
+      fill: $basic-green;
+    }
+  }
+
 
   &:active {
     opacity: 0.6;

@@ -1,6 +1,7 @@
 .address {
   display: flex;
   justify-content: space-between;
+  gap: 16px;
 
   padding: 26px 20px;
 
@@ -14,10 +15,12 @@
     left: 110px;
     z-index: 1;
 
+    column-gap: 95px;
+
     margin-bottom: -200px;
     padding: 60px 80px;
 
-    width: 565px;
+    width: max-content;
 
     background-color: $primary-bg-color;
   }

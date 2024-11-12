@@ -84,6 +84,9 @@
   padding: 0;
 
   list-style-type: none;
+
+  border-top: 1px solid $special-grey;
+  border-bottom: 1px solid $special-grey;
 }
 
 .sub-products__item {
@@ -91,10 +94,10 @@
   grid-template: "header" auto "table" auto "button" 40px;
 
   padding: 12px 0 19px;
-  border-top: 1px solid $special-grey;
+  border-bottom: 1px solid $special-grey;
 
   &:last-child {
-    border-bottom: 1px solid $special-grey;
+    border-bottom: none;
   }
 
   @media (min-width: $tablet-width) {
@@ -109,7 +112,7 @@
   @media (min-width: $desktop-width) {
     display: grid;
     gap: 40px;
-    grid-template: "header table button" 40px / 285px 285px 244px;
+    grid-template: "header table button" auto / 285px 285px 244px;
     align-items: center;
 
     padding: 15px 0;
@@ -178,4 +181,8 @@
   grid-area: button;
   align-self: stretch;
   height: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
