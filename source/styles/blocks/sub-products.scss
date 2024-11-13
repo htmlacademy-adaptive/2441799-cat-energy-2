@@ -115,6 +115,8 @@
     grid-template: "header table button" auto / 285px 285px 244px;
     align-items: center;
 
+    height: 100%;
+
     padding: 15px 0;
     border-right: none;
     border-left: none;
@@ -156,11 +158,11 @@
 
   @media (min-width: $tablet-width) {
     justify-content: flex-end;
-    column-gap: 49px;
+    column-gap: 51px;
 
+    margin: 0;
     margin-left: auto;
-    margin-bottom: 25px;
-
+    padding-top: 3px;
 
     font-size: 16px;
     line-height: 20px;
@@ -175,6 +177,16 @@
 .sub-products__table-number {
   grid-area: table;
   margin: 0;
+
+  span {
+    @media (min-width: $tablet-width) {
+      margin: 0 0 0 9px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 0 9px 0 0;
+    }
+  }
 }
 
 .sub-products__button {
@@ -185,4 +197,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: $desktop-width) {
+    align-self: center;
+  }
 }
