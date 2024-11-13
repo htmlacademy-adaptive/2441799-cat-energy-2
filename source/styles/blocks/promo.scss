@@ -30,11 +30,6 @@
   align-items: center;
   padding: 27px 20px 0;
 
-  @media (max-width: 767px) {
-    margin-top: 65px;
-  }
-
-
   @media (min-width: $tablet-width) {
     align-items: stretch;
 
