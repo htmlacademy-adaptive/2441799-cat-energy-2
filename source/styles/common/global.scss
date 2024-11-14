@@ -21,10 +21,14 @@ body {
   background-color: $primary-bg-color;
 }
 
-.page__wrapper {
-  margin: 0 auto;
-  min-height: 100%;
+.page-body__wrapper {
+  display: flex;
+  flex-direction: column;
+
   width: 320px;
+  height: 100%;
+  margin: 0 auto;
+  min-height: 100vh;
 
   @media (min-width: $tablet-width) {
     width: 768px;
